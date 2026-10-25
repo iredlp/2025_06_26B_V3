@@ -17,7 +17,7 @@ class DBConnect:
         if it does not exist
         :param pool_name: name of the pool
         :param pool_size: number of connections in the pool
-        :return: mysql.connector.connection"""
+        :return: mysql.connector.cnf.connection"""
         if cls._cnxpool is None:
             try:
                 cls._cnxpool = mysql.connector.pooling.MySQLConnectionPool(
